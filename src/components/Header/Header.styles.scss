@@ -1,17 +1,8 @@
 .header {
   box-sizing: border-box;
-  padding: 20px 150px;
+  padding: 40px 150px;
   height: 100vh;
   background-image: url('../../assets/imgs/background-image.png');
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
-}
-
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
