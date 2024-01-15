@@ -1,12 +1,14 @@
 import React from "react";
-import TSR from "./assets/imgs/TSR.svg";
-import './styles/main.scss';
+import './App.styles.scss'
+import {Header} from './components/Header'
+import './index.css'
+import { AboutMe } from "./components/AboutMe";
 
 function App() {
   return (
     <div className="home">
-      <h1>The Typescript React Template</h1>
-      <img src={TSR} alt="Logo" />
+      <Header />
+      <AboutMe />
     </div>
   );
 }
