@@ -6,8 +6,8 @@ export const AboutMe = () => {
     <section className="section">
       <h1 className="title">About Me</h1>
       <p className="paragraph about-me__paragraph">
-Hi! I'm Patryk Wierzbowski, a Full-stack Developer.
-I've been immersed in the fascinating world of programming since a very young age.
+Hi! I&apos;m Patryk Wierzbowski, a Full-stack Developer.
+I&apos;ve been immersed in the fascinating world of programming since a very young age.
 I started my journey at the age of 13, creating simple websites using HTML and CSS. Over time,
 I delved deeper into the intricacies of programming, exploring new technologies such as C++, Python, and JavaScript.
 This passionate interest led me to be a source of concern for my parents many times, as I worked on projects until late into the night.

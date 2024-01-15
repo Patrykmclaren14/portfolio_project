@@ -39,3 +39,4 @@ The React application in Typescript is configured with ESlint, Jest, and Sass.
 ```
 
 Please feel free to use this template and build your awesome projects ✨.
+https://github.com/tandpfun/skill-icons?tab=readme-ov-file
