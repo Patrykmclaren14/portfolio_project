@@ -1,0 +1,21 @@
+.tech-stack {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+
+  &--margin {
+    margin-top: 100px;
+  }
+
+  &__icon {
+    justify-self: center;
+  }
+
+  &__paragraph {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
