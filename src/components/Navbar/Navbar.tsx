@@ -2,7 +2,7 @@ import React from "react";
 import './Navbar.styles.scss'
 import githubIcon from '../../assets/imgs/navbar-icon-github.svg';
 import linkedinIcon from '../../assets/imgs/navbar-icon-linkedin.svg';
-import NavItem from "./Navbar.NavItem";
+import {NavItem} from "./Navbar.NavItem";
 
 const NAV_ITEMS = [
   'Home',
@@ -12,7 +12,7 @@ const NAV_ITEMS = [
   'Contact',
 ]
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <nav className="nav">
       <ul className="nav__list">
@@ -35,5 +35,3 @@ const Navbar = () => {
     </nav>
   )
 }
-
-export default Navbar;

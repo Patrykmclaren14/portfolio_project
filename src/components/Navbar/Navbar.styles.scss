@@ -21,9 +21,14 @@
     &--link {
       color: #A7A7A7;
       text-decoration: none;
+      box-shadow: inset 0 0 0 0 #3b3b3b;
+      padding: 0 .25rem;
+      margin: 0 -.25rem;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 
       &:hover {
-        cursor: pointer;
+        color: #f1f1f1;
+        box-shadow: inset 200px 0 0 0 #A7A7A7;
       }
     }
   }
