@@ -2,16 +2,23 @@ import React from "react";
 import './Navbar.styles.scss'
 import githubIcon from '../../assets/imgs/navbar-icon-github.svg';
 import linkedinIcon from '../../assets/imgs/navbar-icon-linkedin.svg';
+import NavItem from "./Navbar.NavItem";
+
+const NAV_ITEMS = [
+  'Home',
+  'About',
+  'Tech Stack',
+  'Projects',
+  'Contact',
+]
 
 const Navbar = () => {
   return (
     <nav className="nav">
       <ul className="nav__list">
-        <li className="nav__item"><a className="nav__item--link" href="#">Home</a></li>
-        <li className="nav__item"><a className="nav__item--link" href="#">About</a></li>
-        <li className="nav__item"><a className="nav__item--link" href="#">Tech Stack</a></li>
-        <li className="nav__item"><a className="nav__item--link" href="#">Projects</a></li>
-        <li className="nav__item"><a className="nav__item--link" href="#">Contact</a></li>
+        {NAV_ITEMS.map(item => (
+          <NavItem item={item} key={item} />
+          ))}
       </ul>
       <ul className="nav__list">
         <li className="nav__icon">
