@@ -11,10 +11,8 @@
     width: 72%;
     font-size: 30px;
     font-weight: 700;
-    color: rgb(241, 239, 239);
     text-transform: uppercase;
     letter-spacing: 0.9rem;
-    margin-bottom: 30px;
     place-content: center;
     grid-area: span 1;
   }
@@ -25,7 +23,7 @@
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 2em;
+    font-weight: 700;
     font-size: 55px;
     letter-spacing: 0.2rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,18 +32,17 @@
   }
 
   &__button {
-    font-size: 18px;
     margin-top: 40px;
     animation: showing 1s linear;
   }
 }
 
 .name {
-  width: 17.5ch;
+  width: 18.8ch;
 }
 
 .proffession {
-  width: 18.6ch;
+  width: 22.2ch;
 }
 
 .cosmonaut {
