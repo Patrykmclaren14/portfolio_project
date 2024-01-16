@@ -1,0 +1,55 @@
+.projects {
+  padding: 120px 150px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+  &__paragraph {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.project {
+  justify-self: center;
+  height: 70vh;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #363636;
+
+  &__image {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    height: 40%;
+  }
+
+  &__container {
+    padding: 20px;
+    height: 60%;
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  &__headline {
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #CCCCCC;
+  }
+
+  &__paragraph {
+    letter-spacing: 0.1rem;
+    color: #a8a8a8;
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+}
