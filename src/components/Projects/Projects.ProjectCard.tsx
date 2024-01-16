@@ -1,15 +1,5 @@
 import React from "react"
-
-interface Project {
-  url: string;
-  title: string;
-  technologies: string;
-  description: string;
-}
-
-interface ProjectProps {
-  project: Project
-}
+import { ProjectProps } from "./Projects.types"
 
 export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
