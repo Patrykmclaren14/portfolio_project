@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { AboutMe } from "./components/AboutMe";
 import { TechStack } from "./components/TechStack";
 import { Projects } from "./components/Projects";
+import { Projects } from "./components/Expirience";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <TechStack />
       <Projects />
+      <Expirience />
     </div>
   );
 }
