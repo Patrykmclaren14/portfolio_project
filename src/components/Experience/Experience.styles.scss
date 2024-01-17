@@ -1,0 +1,46 @@
+.experience {
+  padding: 150px 350px;
+  display: grid;
+  gap: 50px;
+  &__paragraph {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.exp {
+  display: grid;
+  grid-template-rows: repeat(30, 20px);
+  grid-template-columns: 1fr 5fr 1fr;
+  background-color: #363636;
+  border-radius: 20px;
+  height: 35vh;
+  padding: 30px;
+  box-shadow: 2px 2px 30px 1px #141414;
+
+  &__title {
+    color: #EAD9D9;
+    font-size: 30px;
+  }
+
+  &__paragraph {
+    color: #ABABAB;
+    font-size: 15px;
+  }
+
+  &__period {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  &__work-place {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  &__description {
+    color: #EAD9D9;
+    grid-column: 1 / 5;
+    grid-row: 7 / 20;
+  }
+}
