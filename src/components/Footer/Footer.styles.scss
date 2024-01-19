@@ -1,0 +1,38 @@
+.footer {
+  height: 20vh;
+  background-color: #211F1F;
+  padding: 0 150px;
+  display: grid;
+
+  &__line {
+    height: 1px;
+    background-color: #333333;
+  }
+
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+    &--item {
+      font-size: 18px;
+    }
+
+    &--link {
+      color: #A7A7A7;
+      text-decoration: none;
+      box-shadow: inset 0 0 0 0 #3b3b3b;
+      padding: 0 .25rem;
+      margin: 0 -.25rem;
+      transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+
+      &:hover {
+        color: #f1f1f1;
+        box-shadow: inset 200px 0 0 0 #A7A7A7;
+      }
+    }
+  }
+}
