@@ -1,11 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import './AboutMe.styles.scss'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export const AboutMe = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <section className="section">
-      <h1 className="title">About Me</h1>
-      <p className="paragraph about-me__paragraph">
+      <h1 className="title" data-aos="fade-up">About Me</h1>
+      <p className="paragraph about-me__paragraph" data-aos="fade-up">
 Hi! I&apos;m Patryk Wierzbowski, a Full-stack Developer.
 I&apos;ve been immersed in the fascinating world of programming since a very young age.
 I started my journey at the age of 13, creating simple websites using HTML and CSS. Over time,

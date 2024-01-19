@@ -3,14 +3,7 @@ import './Navbar.styles.scss'
 import githubIcon from '../../assets/imgs/navbar-icon-github.svg';
 import linkedinIcon from '../../assets/imgs/navbar-icon-linkedin.svg';
 import {NavItem} from "./Navbar.NavItem";
-
-const NAV_ITEMS = [
-  'Home',
-  'About',
-  'Tech Stack',
-  'Projects',
-  'Contact',
-]
+import NAV_ITEMS from '../../utils/navItems';
 
 export const Navbar = () => {
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './TechStack.styles.scss';
 import { Technology } from "./TechStack.Technology";
 import github from '../../assets/imgs/icons/github.svg';
@@ -13,6 +13,8 @@ import sass from '../../assets/imgs/icons/sass.svg';
 import ts from '../../assets/imgs/icons/ts.svg';
 import tw from '../../assets/imgs/icons/tw.svg';
 import vs from '../../assets/imgs/icons/vs.svg';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const techIcons = [
   { name: 'github', path: github, alt: 'GitHub' },
@@ -30,11 +32,15 @@ const techIcons = [
 ];
 
 export const TechStack = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <section className="section">
-      <h1 className="title">My Tech Stack</h1>
-      <p className="paragraph tech-stack__paragraph">Technologies I’ve been working with recently</p>
-      <article className="tech-stack tech-stack--margin">
+      <h1 className="title" data-aos="fade-up">My Tech Stack</h1>
+      <p className="paragraph tech-stack__paragraph" data-aos="fade-up">Technologies I’ve been working with recently</p>
+      <article className="tech-stack tech-stack--margin" data-aos="fade-up">
         {techIcons.map((tech, index) => (
           <Technology key={index} name={tech.name} path={tech.path} alt={tech.alt} />
         ))}

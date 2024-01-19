@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useEffect } from "react"
 import './Experience.styles.scss'
 import mate from '../../assets/imgs/mate-logo.svg'
 import kodland from '../../assets/imgs/kodland-logo.svg'
 import { ExperienceCard } from './Experience.ExperienceCard';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const EXPERIENCE_DATA = [
   { img: mate, name: 'Mate Academy', position: ' | Full Stack Developer', time: 'Sep 2023 - Present', workPlace: 'Remote', description: `
@@ -23,11 +25,14 @@ const EXPERIENCE_DATA = [
 ];
 
 export const Experience = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
   return (
     <section className="section">
-      <h1 className="title">Experience</h1>
-      <p className="paragraph experience__paragraph">Skill Mastery at Leading Innovators</p>
-      <article className="experience">
+      <h1 className="title" data-aos="fade-up">Experience</h1>
+      <p className="paragraph experience__paragraph" data-aos="fade-up">Skill Mastery at Leading Innovators</p>
+      <article className="experience" data-aos="fade-up">
           {EXPERIENCE_DATA.map(experience => (
             <ExperienceCard key={experience.img} experience={experience} />
           ))}
